@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg {
+    height: 75vh;
+    background-image: url(assets/bg.jpg);
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.black {
+    height: 75vh;
+    background-size: max(1200px, 100vw);
+    background-color: rgba(0, 0, 0, 0.645);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 75vw;
+
+}
+
+.uptext {
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 90px;
+
+
+
+}
+
+.uptext>:nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    font-style: normal;
+    margin-bottom: 21px;
+
+}
+
+.uptext>:nth-child(2) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 22px;
+}
+
+.uptext>:nth-child(3) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 22px;
+
+}
+
+.uptext input {
+    background-color: rgba(0, 0, 0, 0.608);
+    padding: 12px 102px 12px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid gray;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+
+}
+
+button:hover {
+    background-color: rgb(171, 3, 3);
+    cursor: pointer;
+}
+
+.details button {
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+nav button {
+    padding: 5px 13px;
+    color: white;
+}
+
+.but :first-child {
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.separator {
+    height: 10px;
+    background-color: #232323;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+
+    height: 400px;
+
+}
+
+.tv {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 70vw;
+    margin: auto;
+
+}
+
+.tvmedia img {
+    height: 300px;
+    ;
+}
+
+
+
+
+.text>:nth-child(1) {
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+
+.text>:nth-child(2) {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faq {
+    background-color: black;
+    height: 670px;
+    color: white;
+    text-align: center;
+}
+
+.questions div {
+    background-color: #414141;
+    max-width: 60vw;
+    margin: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.questions :hover {
+    background-color: #565555;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.questions {
+    padding: 5px;
+}
+
+h2 {
+    padding: 30px;
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+footer {
+    color: #bcb7b7a0;
+    padding: 80px;
+    background-color: black;
+    height: 225px;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 70px;
+    grid-row: 4;
+    padding-top: 30px;
+}
+
+.grid div a {
+    color: #bcb7b7a0;
+    font-size: 15px;
+
+}
+
+.grid div div {
+    padding: 10px;
+}
+
+
+
+@media (max-width:600px) {
+    .uptext {
+        margin-top: 30px;
+    }
+
+    .uptext input {
+        background-color: rgba(0, 0, 0, 0.608);
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .bg {
+        height: 65vh;
+
+    }
+
+    .black {
+        height: 65vh;
+
+    }
+
+
+}
+
+@media(max-width:1100px) {
+    .first {
+
+        height: 562px;
+    }
+
+    .tv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        max-width: 90vw;
+
+    }
+
+    .tvmedia img {
+        max-height: 250px;
+    }
+
+
+
+    .text {
+        padding: 20px;
+        text-align: center;
+
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        height: 600px;
+    }
+
+
+}
